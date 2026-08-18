@@ -23,7 +23,8 @@ const obtenerConsejo = async () => {
         // TODO: (opcional pero recomendado) deshabilitar el botón
         // Mostramos un texto de carga
         //TODO: (opcional) puedes cambiar el texto del párrafo a mientras se carga
-
+        boton.disabled = true
+        textoConsejo.textContent = 'Cargando consejo...'
         // 2.1 Utiliza 'fetch' para llamar a la API. Recuerda usar 'await' ya que fetch devuelve una promesa.
         // TODO: const respuesta = ...
         const respuesta = await fetch('https://api.adviceslip.com/advice')
@@ -44,7 +45,7 @@ const obtenerConsejo = async () => {
         // El bloque finally se ejecuta SIEMPRE, haya error o no.
         // Aquí volvemos a habilitar el botón para que puedan pedir otro consejo.
         // TODO: boton.disabled ...
-
+        boton.disabled = false
     }
 };
 
