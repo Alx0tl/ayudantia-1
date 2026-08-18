@@ -1,4 +1,4 @@
-# Tarea 1 de ayudantia, Generador de Consejos
+# Tarea 1 de ayudantía Ingeniería de Software, Generador de Consejos
 Aplicación web desarrollada con HTML, CSS y JavaScript que consume la API de Advice Slip para obtener y mostrar consejos aleatorios.
 
 ## Funcionalidades
